@@ -84,7 +84,7 @@ void fragment()
 {
   // Set up variables to be used further along, these primarily provide compatibility with the original codebase and Godot's shader specifics
   float Timer = TIME;
-  vec2 FragCoord = UV;
+  vec2 FragCoord = SCREEN_UV;
   vec2 q = FragCoord.xy;
   vec2 uv = q;
   uv = mix( curve( uv ), uv, 0.5 );
