@@ -162,7 +162,7 @@ void fragment()
 
   // Vertical lines (aperture)
   if (vlines) {
-    col*=1.0-0.23*vec3(clamp((mod(FragCoord.x, 2.0)-1.0)*2.0,0.0,1.0));
+    col*=1.0-0.23*vec3(clamp((mod(VERTEX.x, 2.0)-1.0)*2.0,0.0,1.0));
   }
 
   // Flicker
